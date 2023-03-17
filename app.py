@@ -16,7 +16,7 @@ def predict():
     output=round(prediction[0],1)
     return render_template('BMI.html',prediction_text='BMI of the person is. {}'.format(output))
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(port=8082,debug=True)
 
 
     #####################################################################
